@@ -20,18 +20,12 @@ class Result extends React.Component {
         }`
       )
       .then(data => {
-        console.log(data);
+        // console.log(data);
         this.setState({
           results: data.data
         });
       });
   }
-
-  results() {
-    return <div />;
-  }
-
-  handleClick() {}
 
   render() {
     // console.log(this.props.match.params);

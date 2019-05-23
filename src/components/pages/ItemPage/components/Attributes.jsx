@@ -1,6 +1,7 @@
 import React from "react";
 
-function Attributes() {
+function Attributes(props) {
+  console.log(props.data);
   return (
     <table className="infoTable">
       <tr>
@@ -9,43 +10,34 @@ function Attributes() {
         </td>
         <td id="widthSet2" />
       </tr>
-      <tr>
-        <td>Plant-based: </td>
-        <td className="yes">Yes</td>
-      </tr>
-      <tr>
-        <td>Paleo: </td>
-        <td className="yes">Yes</td>
-      </tr>
-      <tr>
-        <td>Keto: </td>
-        <td className="yes">Yes</td>
-      </tr>
-      <tr>
-        <td>Natural: </td>
-        <td className="yes">Yes</td>
-      </tr>
-      <tr>
-        <td>Gluten-free: </td>
-        <td className="yes">Yes</td>
-      </tr>
-      <tr>
-        <td>Glycemic index: </td>
-        <td>0</td>
-      </tr>
+      {props.data.vegan != null && (
+        <tr>
+          <td>Plant-based: </td>
+          <td className="yes">Yes</td>
+        </tr>
+      )}
+      {props.data.paleo != null && (
+        <tr>
+          <td>Paleo: </td>
+          {props.data.paleo == true ? (
+            <td className="yes">Yes</td>
+          ) : (
+            <td className="no">No</td>
+          )}
+        </tr>
+      )}
+      {props.data.keto != null && (
+        <tr>
+          <td>Keto: </td>
+          <td className="yes">Yes</td>
+        </tr>
+      )}
+
       <hr />
       <tr>
         <td>
           <h5>Safety</h5>
         </td>
-      </tr>
-      <tr>
-        <td>Kid safe: </td>
-        <td className="no">No</td>
-      </tr>
-      <tr>
-        <td>Dog safe: </td>
-        <td className="no">No</td>
       </tr>
     </table>
   );

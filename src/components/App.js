@@ -1,8 +1,9 @@
 import React from "react";
-import "../App.css";
-import NavBar from "./Navbar";
-import "../index.css";
 import "../mobile.css";
+import "../App.css";
+import "../index.css";
+import NavBar from "./Navbar";
+
 import Home from "./pages/Home";
 import Results from "./pages/Results/index";
 import ItemPage from "./pages/ItemPage/index";
