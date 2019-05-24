@@ -27,6 +27,7 @@ class Login extends Component {
       .then(response => {
         this.setState({ username: "", password: "" });
         this.props.getUser(response);
+        window.location.href = "/";
       })
       .catch(error => console.log(error));
   };

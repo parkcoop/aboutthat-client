@@ -64,7 +64,12 @@ class App extends React.Component {
             <Route
               exact
               path="/users/:username"
-              component={props => <UserProfile {...props} />}
+              component={props => (
+                <UserProfile
+                  userInSession={this.state.loggedInUser}
+                  {...props}
+                />
+              )}
             />
             <Route
               exact
@@ -79,7 +84,9 @@ class App extends React.Component {
             <Route
               exact
               path="/items/edit/:id"
-              component={props => <EditItem {...props} />}
+              component={props => (
+                <EditItem userInSession={this.state.loggedInUser} {...props} />
+              )}
             />
           </Switch>
         </div>
@@ -118,7 +125,7 @@ class App extends React.Component {
             <Route
               exact
               path="/items/edit/:id"
-              component={props => <EditItem {...props} />}
+              render={() => <Login getUser={this.getTheUser} />}
             />
           </Switch>
         </div>

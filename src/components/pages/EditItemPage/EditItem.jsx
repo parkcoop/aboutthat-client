@@ -12,6 +12,10 @@ const styles = {
 class EditItem extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      userId: this.props.userInSession._id,
+      username: this.props.userInSession.username
+    };
   }
 
   //   state = {
@@ -37,7 +41,9 @@ class EditItem extends Component {
     axios
       .post(`http://localhost:5000/items/edit/${this.props.match.params.id}`, {
         description: this.state.description,
-        source: this.state.source
+        source: this.state.source,
+        userId: this.state.userId,
+        username: this.state.username
       })
       .then(fromServer => {
         console.log(fromServer);
@@ -67,6 +73,7 @@ class EditItem extends Component {
             type="text"
             required
           />
+          {/* <input type="text" value={this.state.user} hidden /> */}
           <br />
           <button type="submit">Submit</button>
         </form>

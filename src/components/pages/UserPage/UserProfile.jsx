@@ -16,6 +16,7 @@ class UserProfile extends Component {
     };
   }
   componentDidMount() {
+    console.log(this.props.userInSession);
     axios
       .get(`http://localhost:5000/users/${this.props.match.params.username}`)
       .then(returnedUser => {
@@ -27,7 +28,22 @@ class UserProfile extends Component {
   }
 
   render() {
-    return <div style={styles}>Hi {this.state.user.username}</div>;
+    return (
+      <div style={styles}>
+        Hi {this.state.user.username}, you have {this.state.user.points} points
+        {this.state.user.additions &&
+          this.state.user.additions.map(additions => {
+            return (
+              <div>
+                <ul>
+                  <li>{additions.item}</li>
+                  <li>{additions.contribution}</li>
+                </ul>
+              </div>
+            );
+          })}
+      </div>
+    );
   }
 }
 
