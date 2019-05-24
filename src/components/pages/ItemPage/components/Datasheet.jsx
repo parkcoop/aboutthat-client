@@ -1,5 +1,7 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 // import heart from "./img/heart.png";
 //make heart + number as component
 class Datasheet extends React.Component {
@@ -55,7 +57,17 @@ class Datasheet extends React.Component {
         <hr />
         <p>
           {this.props.data.description.map(descriptions => {
-            return descriptions + " ";
+            if (descriptions.endsWith(".")) {
+              return (
+                descriptions.charAt(0).toUpperCase() +
+                descriptions.slice(1) +
+                " "
+              );
+            } else {
+              return `${descriptions
+                .charAt(0)
+                .toUpperCase()}${descriptions.slice(1)}. `;
+            }
           })}
         </p>
         <p>
@@ -64,11 +76,20 @@ class Datasheet extends React.Component {
         <p>
           Read more:{" "}
           {this.props.data.sources.map(sources => {
-            return (
-              <li>
-                <a href={sources}>{sources}</a>
-              </li>
-            );
+            if (sources.startsWith("http")) {
+              return (
+                <li>
+                  <a href={sources}>{sources}</a>
+                </li>
+              );
+            } else {
+              return (
+                <li>
+                  <a href={"http://" + sources}>{sources}</a>
+                </li>
+              );
+            }
+            // console.log(sources.startsWith("http"));
           })}
         </p>
         <hr />
@@ -88,6 +109,9 @@ class Datasheet extends React.Component {
             </a>
           </div>
         )}
+        <Link to={`/items/edit/${this.props.data._id}`}>
+          <button>Add a fact</button>
+        </Link>
       </div>
     );
   }

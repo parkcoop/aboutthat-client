@@ -15,7 +15,7 @@ class Result extends React.Component {
   componentDidMount() {
     axios
       .get(
-        `http://localhost:3000/items/search?term=${
+        `http://localhost:5000/items/search?term=${
           this.props.match.params.searchTerm
         }`
       )

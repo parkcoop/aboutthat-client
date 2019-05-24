@@ -1,5 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import AuthService from "./auth/auth-service";
 import logo from "../logo.png";
+
+const styles = {
+  position: "absolute",
+  top: 10,
+  right: 10,
+  backgroundColor: "white",
+  borderRadius: 5,
+  padding: "10px 30px",
+
+  margin: "auto"
+};
 function Logo() {
   return (
     <a className="img" href="/">
@@ -27,21 +40,69 @@ function NavItems() {
 }
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = { loggedInUser: null };
+    this.service = new AuthService();
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({ ...this.state, loggedInUser: nextProps["userInSession"] });
+  }
+  logoutUser = () => {
+    this.service.logout().then(() => {
+      this.setState({ loggedInUser: null });
+      // this.props.getUser(null);
+    });
+  };
   render() {
-    return (
-      <div>
-        <div className="nav-flex-container1">
-          <Logo />
+    // return (
+    if (this.state.loggedInUser) {
+      return (
+        <div>
+          <div className="nav-flex-container1">
+            <Logo />
+          </div>
+          <div className="nav-flex-container2">
+            <NavItems />
+            <div style={styles}>
+              Welcome,{" "}
+              <Link to={`/users/${this.state.loggedInUser.username}`}>
+                {this.state.loggedInUser.username}
+              </Link>
+              <Link to="/">
+                <button onClick={() => this.logoutUser()}>Logout</button>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="nav-flex-container2">
-          <NavItems />
+      );
+    } else {
+      return (
+        <div>
+          <div className="nav-flex-container1">
+            <Logo />
+          </div>
+          <div className="nav-flex-container2">
+            <NavItems />
+            <div style={styles}>
+              <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+                <li>
+                  <Link to="/login" style={{ textDecoration: "none" }}>
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/signup" style={{ textDecoration: "none" }}>
+                    Signup
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 

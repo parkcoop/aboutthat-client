@@ -30,7 +30,7 @@ class index extends Component {
 
   componentWillMount() {
     axios
-      .get(`http://localhost:3000/items/${this.props.match.params.id}`)
+      .get(`http://localhost:5000/items/${this.props.match.params.id}`)
       .then(foundItem => {
         console.log(foundItem.data);
         this.setState({
