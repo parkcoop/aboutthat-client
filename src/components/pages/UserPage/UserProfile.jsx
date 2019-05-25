@@ -5,7 +5,8 @@ const styles = {
   background: "white",
   width: "50%",
   margin: "auto",
-  padding: 100
+  padding: 50,
+  textAlign: "center"
 };
 
 class UserProfile extends Component {
@@ -29,16 +30,35 @@ class UserProfile extends Component {
 
   render() {
     return (
-      <div style={styles}>
-        Hi {this.state.user.username}, you have {this.state.user.points} points
+      <div
+        className="infoSection"
+        style={{ margin: "auto", padding: 50, textAlign: "center" }}
+      >
+        <h1>
+          {this.state.user.username &&
+            this.state.user.username.charAt(0).toUpperCase() +
+              this.state.user.username.slice(1)}
+        </h1>
+        <h5>{this.state.user.points} points</h5>
+        <h6>Contributions:</h6>
         {this.state.user.additions &&
           this.state.user.additions.map(additions => {
             return (
-              <div>
-                <ul>
+              <div
+                style={{
+                  background: "grey",
+                  width: "100%",
+                  margin: "auto",
+                  borderRadius: "10px",
+                  color: "white"
+                }}
+              >
+                <h3>{additions.item}</h3>
+                <h2>{additions.contribution}</h2>
+                {/* <ul>
                   <li>{additions.item}</li>
                   <li>{additions.contribution}</li>
-                </ul>
+                </ul> */}
               </div>
             );
           })}

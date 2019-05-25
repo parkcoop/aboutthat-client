@@ -3,11 +3,11 @@ import Datasheet from "./components/Datasheet";
 import Sidebar from "./components/Sidebar";
 import axios from "axios";
 
-const styles = {
-  display: "flex",
-  width: "80%",
-  margin: "auto"
-};
+// const styles = {
+//   display: "flex",
+//   width: "80%",
+//   margin: "auto"
+// };
 
 class index extends Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class index extends Component {
   showDatasheet() {
     if (this.state.pageResponse) {
       return (
-        <div className="resultData" style={styles}>
+        <div className="resultData">
           <Sidebar data={this.state.pageResponse} />
           <Datasheet data={this.state.pageResponse} />
         </div>

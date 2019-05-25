@@ -11,6 +11,7 @@ import ItemPage from "./pages/ItemPage/index";
 import Signup from "./auth/Signup";
 import AuthService from "./auth/auth-service";
 import Login from "./auth/Login";
+import AddItem from "./pages/EditItemPage/AddItem";
 import { Route, Link, NavLink, Switch } from "react-router-dom";
 
 class App extends React.Component {
@@ -88,6 +89,13 @@ class App extends React.Component {
                 <EditItem userInSession={this.state.loggedInUser} {...props} />
               )}
             />
+            <Route
+              exact
+              path="/addEntry"
+              component={props => (
+                <AddItem userInSession={this.state.loggedInUser} />
+              )}
+            />
           </Switch>
         </div>
       );
@@ -125,6 +133,11 @@ class App extends React.Component {
             <Route
               exact
               path="/items/edit/:id"
+              render={() => <Login getUser={this.getTheUser} />}
+            />
+            <Route
+              exact
+              path="/addEntry"
               render={() => <Login getUser={this.getTheUser} />}
             />
           </Switch>

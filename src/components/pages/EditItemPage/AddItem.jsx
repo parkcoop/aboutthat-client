@@ -12,64 +12,137 @@ const styles = {
 class AddItem extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      name: "",
+      source: [],
+      description: [],
+      vegan: true,
+      paleo: true,
+      keto: true,
+      mayContain: [],
+      user: this.props.userInSession.username,
+      userId: this.props.userInSession._id
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  //   state = {
-  //     description: "",
-  //     source: ""
-  //   };
+  handleChange = field => e => {
+    this.setState({
+      [field]: e.target.value
+    });
+  };
 
-  //   handleFact(e) {
-  //     console.log(e.target.name, e.target.value);
-  //     this.setState({
-  //       description: e.target.value
-  //     });
-  //   }
-  //   handleSource(e) {
-  //     console.log(e.target.name, e.target.value);
-  //     this.setState({
-  //       source: e.target.value
-  //     });
-  //   }
-
-  //   onSubmit(e) {
-  //     e.preventDefault();
-  //     axios
-  //       .post(`http://localhost:5000/items/edit/${this.props.match.params.id}`, {
-  //         description: this.state.description,
-  //         source: this.state.source
-  //       })
-  //       .then(fromServer => {
-  //         console.log(fromServer);
-  //       });
-  //     window.location.href = `/items/${this.props.match.params.id}`;
-  //     // console.log(this.props.match.params.id);
-  //   }
-
+  handleSubmit(e) {
+    e.preventDefault();
+    axios.post("http://localhost:5000/addEntry", {
+      name: this.state.name,
+      source: this.state.source,
+      description: this.state.description,
+      vegan: this.state.vegan,
+      paleo: this.state.paleo,
+      keto: this.state.keto,
+      mayContain: this.state.mayContain,
+      user: this.state.user,
+      userId: this.state.userId
+    });
+    window.location.href = `/`;
+  }
   render() {
     return (
-      <div style={styles}>
-        <form onSubmit={e => this.onSubmit(e)}>
-          <label>Fact</label>
+      <div
+        className="infoSection"
+        style={{ margin: "auto", textAlign: "center" }}
+      >
+        <h1>Add Entry</h1>
+
+        <hr />
+        <form onSubmit={e => this.handleSubmit(e)}>
+          <label>
+            <b>Name (try to make as same as Wikipedia's article)</b>
+          </label>
           <br />
           <input
-            onChange={e => this.handleFact(e)}
-            name="description"
+            onChange={this.handleChange("name")}
             type="text"
+            name="name"
             required
           />
           <br />
-          <label>Source</label>
+          <label>
+            <b>Source</b>
+          </label>
           <br />
           <input
-            onChange={e => this.handleSource(e)}
+            onChange={this.handleChange("source")}
+            type="text"
             name="source"
-            type="text"
-            required
           />
           <br />
-          <button type="submit">Submit</button>
+          <label>
+            <b>Description (one sentence)</b>
+          </label>
+          <br />
+          <input
+            onChange={this.handleChange("description")}
+            style={{ width: "50%" }}
+            type="text"
+            required
+            name="description"
+          />
+          <br />
+          <label>
+            <b>What active chemicals does this contain? (separated by comma)</b>
+          </label>
+          <br />
+          <input
+            onChange={this.handleChange("mayContain")}
+            type="text"
+            name="mayContain"
+          />
+          <br />
+          <label>Is it vegan/plant-based?</label> <br />
+          <select onChange={this.handleChange("vegan")} name="vegan">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br />
+          <label>Is it considered keto/carbohydrate-free?</label> <br />
+          <select onChange={this.handleChange("keto")} name="keto">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br />
+          <label>Is it considered paleo?</label> <br />
+          <select onChange={this.handleChange("paleo")} name="paleo">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br />
+          <br />
+          <button type="submit">Submit Entry</button>
         </form>
+
+        <hr />
+        {/* {this.state.pageResponse && (
+            <div>
+              <h4>
+                <i>From Wikipedia:</i>
+              </h4>
+              <p>
+                {this.state.pageResponse &&
+                  this.state.pageResponse.substring(0, 1000) + "..."}
+              </p>
+              <a
+                href={`https://en.wikipedia.org/wiki/${this.props.data.name.toLowerCase()}`}
+              >
+                OMG
+              </a>
+            </div>
+          )} */}
+        {/* <Link to={`/items/edit/${this.props.data._id}`}>
+            <button>Add a fact</button>
+          </Link> */}
       </div>
     );
   }
