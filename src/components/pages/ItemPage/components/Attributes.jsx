@@ -10,10 +10,15 @@ function Attributes(props) {
         </td>
         <td id="widthSet2" />
       </tr>
+
       {props.data.vegan != null && (
         <tr>
-          <td>Plant-based: </td>
-          <td className="yes">Yes</td>
+          <td>Vegan: </td>
+          {props.data.vegan == true ? (
+            <td className="yes">Yes</td>
+          ) : (
+            <td className="no">No</td>
+          )}
         </tr>
       )}
       {props.data.paleo != null && (
@@ -29,9 +34,19 @@ function Attributes(props) {
       {props.data.keto != null && (
         <tr>
           <td>Keto: </td>
-          <td className="yes">Yes</td>
+          {props.data.keto == true ? (
+            <td className="yes">Yes</td>
+          ) : (
+            <td className="no">No</td>
+          )}
         </tr>
       )}
+      {/* {props.data.keto != null && (
+        <tr>
+          <td>Keto: </td>
+          <td className="yes">Yes</td>
+        </tr>
+      )} */}
 
       <hr />
       <tr>

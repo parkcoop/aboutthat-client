@@ -45,11 +45,15 @@ class Signup extends Component {
 
   render() {
     return (
-      <div style={loginStyles}>
+      <div
+        className="infoSection"
+        style={{ textAlign: "center", margin: "auto" }}
+      >
         <form onSubmit={this.handleFormSubmit}>
           <label>Username:</label>
           <br />
           <input
+            style={{ border: "0.5px solid grey" }}
             type="text"
             name="username"
             value={this.state.username}
@@ -60,13 +64,15 @@ class Signup extends Component {
           <label>Password:</label>
           <br />
           <input
+            style={{ border: "0.5px solid grey" }}
             type="password"
             name="password"
             value={this.state.password}
             onChange={e => this.handleChange(e)}
           />
           <br />
-          <input type="submit" value="Signup" />
+          <br />
+          <button type="submit">Sign up</button>
         </form>
 
         <p>

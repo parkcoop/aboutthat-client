@@ -59,6 +59,7 @@ class EditItem extends Component {
           <label>Fact</label>
           <br />
           <input
+            style={{ width: "50%" }}
             onChange={e => this.handleFact(e)}
             name="description"
             type="text"
@@ -68,6 +69,7 @@ class EditItem extends Component {
           <label>Source</label>
           <br />
           <input
+            style={{ width: "50%" }}
             onChange={e => this.handleSource(e)}
             name="source"
             type="text"
@@ -75,6 +77,8 @@ class EditItem extends Component {
           />
           {/* <input type="text" value={this.state.user} hidden /> */}
           <br />
+          <br />
+
           <button type="submit">Submit</button>
         </form>
       </div>

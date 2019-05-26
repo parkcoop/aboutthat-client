@@ -13,6 +13,12 @@ class Result extends React.Component {
   }
 
   componentDidMount() {
+    if (
+      this.props.match.params.searchTerm == " " ||
+      this.props.match.params.searchTerm == "  "
+    ) {
+      window.location.href = `/`;
+    }
     axios
       .get(
         `http://localhost:5000/items/search?term=${
@@ -44,7 +50,15 @@ class Result extends React.Component {
               <h3>
                 <Link to={`/items/${obj._id}`}>{obj.name}</Link>
               </h3>
-              <p className="description">{obj.description}</p>
+              <p className="description">
+                {obj.description.map(descriptions => {
+                  if (descriptions.endsWith(".")) {
+                    return descriptions + " ";
+                  } else {
+                    return descriptions + ". ";
+                  }
+                })}
+              </p>
 
               <hr />
             </div>

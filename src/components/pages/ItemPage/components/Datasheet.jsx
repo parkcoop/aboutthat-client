@@ -96,6 +96,12 @@ class Datasheet extends React.Component {
             // console.log(sources.startsWith("http"));
           })}
         </p>
+        <center>
+          {" "}
+          <Link to={`/items/edit/${this.props.data._id}`}>
+            <button>Add a fact</button>
+          </Link>
+        </center>
         <hr />
         {this.state.pageResponse && (
           <div>
@@ -106,16 +112,18 @@ class Datasheet extends React.Component {
               {this.state.pageResponse &&
                 this.state.pageResponse.substring(0, 1000) + "..."}
             </p>
-            <a
-              href={`https://en.wikipedia.org/wiki/${this.props.data.name.toLowerCase()}`}
-            >
-              OMG
-            </a>
+            <center>
+              {" "}
+              <a
+                href={`https://en.wikipedia.org/wiki/${this.props.data.name.toLowerCase()}`}
+              >
+                <button>Read Wikipedia article</button>
+              </a>
+            </center>
+            <br />
+            <br />
           </div>
         )}
-        <Link to={`/items/edit/${this.props.data._id}`}>
-          <button>Add a fact</button>
-        </Link>
       </div>
     );
   }

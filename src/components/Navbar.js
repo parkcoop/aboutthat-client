@@ -6,7 +6,7 @@ import logo from "../logo.png";
 function Logo() {
   return (
     <a className="img" href="/">
-      <img className="img" src={logo} width="250px" />
+      <img className="img" src={logo} width="225px" />
     </a>
   );
 }
@@ -22,11 +22,6 @@ function NavItems() {
       <li className="navList">
         <Link style={{ textDecoration: "none" }} to="">
           About
-        </Link>
-      </li>
-      <li className="navList">
-        <Link style={{ textDecoration: "none" }} to="">
-          Discuss
         </Link>
       </li>
       <li className="navList">
@@ -65,6 +60,7 @@ class Navbar extends React.Component {
           <div className="userDialogStyles">
             Logged in as {this.state.loggedInUser.username}
             <br />
+            <p>🏆{this.state.loggedInUser.points}</p>
             <Link to={`/users/${this.state.loggedInUser.username}`}>
               <button>My Profile</button>
             </Link>{" "}
@@ -72,7 +68,7 @@ class Navbar extends React.Component {
               <button onClick={() => this.logoutUser()}>Logout</button>
             </Link>
           </div>
-          <div className="nav-flex-container1">
+          <div style={{ height: 125 }} className="nav-flex-container1">
             <Logo />
           </div>
           <div className="nav-flex-container2">
@@ -83,19 +79,19 @@ class Navbar extends React.Component {
     } else {
       return (
         <div>
-          <div className="userDialogStyles">
-            <ul style={{ listStyle: "none", paddingLeft: 0, margin: 0 }}>
-              <li>
-                <Link to="/login" style={{ textDecoration: "none" }}>
-                  Login
-                </Link>
-              </li>
-              <li>
-                <Link to="/signup" style={{ textDecoration: "none" }}>
-                  Signup
-                </Link>
-              </li>
-            </ul>
+          <div className="userDialogStyles2">
+            {/* <ul style={{ listStyle: "none", paddingLeft: 0, margin: 0 }}> */}
+            <div>
+              <Link to="/login" style={{ textDecoration: "none" }}>
+                Login
+              </Link>
+            </div>
+            <div>
+              <Link to="/signup" style={{ textDecoration: "none" }}>
+                Signup
+              </Link>
+            </div>
+            {/* </ul> */}
           </div>
           <div className="nav-flex-container1">
             <Logo />

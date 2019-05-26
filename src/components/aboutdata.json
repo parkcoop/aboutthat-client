@@ -240,7 +240,7 @@
         "HFCS 42 – 42% fructose (used in processed foods). HFCS 55 – 55% fructose (used in beverages)."
       ],
       "keto": false,
-      "vegan": null,
+      "vegan": true,
       "paleo": false,
       "dogSafe": null,
       "kidSafe": null,

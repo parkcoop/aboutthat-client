@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Route, Link, NavLink, Switch } from "react-router-dom";
 
 const styles = {
   background: "white",
@@ -39,29 +40,41 @@ class UserProfile extends Component {
             this.state.user.username.charAt(0).toUpperCase() +
               this.state.user.username.slice(1)}
         </h1>
-        <h5>{this.state.user.points} points</h5>
+        <h5>🏆 {this.state.user.points} points</h5>
         <h6>Contributions:</h6>
-        {this.state.user.additions &&
-          this.state.user.additions.map(additions => {
-            return (
-              <div
-                style={{
-                  background: "grey",
-                  width: "100%",
-                  margin: "auto",
-                  borderRadius: "10px",
-                  color: "white"
-                }}
-              >
-                <h3>{additions.item}</h3>
-                <h2>{additions.contribution}</h2>
-                {/* <ul>
+        <div
+          style={{
+            justifyContent: "center",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap"
+          }}
+        >
+          {this.state.user.additions &&
+            this.state.user.additions.map(additions => {
+              return (
+                <div
+                  style={{
+                    background: "grey",
+                    padding: 10,
+                    width: "45%",
+                    margin: 10,
+
+                    color: "white"
+                  }}
+                >
+                  <Link to={`/items/${additions.itemId}`}>
+                    <h6>{additions.item}</h6>
+                    <h5>"{additions.contribution}"</h5>
+                    {/* <ul>
                   <li>{additions.item}</li>
                   <li>{additions.contribution}</li>
                 </ul> */}
-              </div>
-            );
-          })}
+                  </Link>
+                </div>
+              );
+            })}
+        </div>
       </div>
     );
   }
