@@ -39,12 +39,17 @@ class EditItem extends Component {
   onSubmit(e) {
     e.preventDefault();
     axios
-      .post(`http://localhost:5000/items/edit/${this.props.match.params.id}`, {
-        description: this.state.description,
-        source: this.state.source,
-        userId: this.state.userId,
-        username: this.state.username
-      })
+      .post(
+        `https://secure-garden-36333.herokuapp.com/items/edit/${
+          this.props.match.params.id
+        }`,
+        {
+          description: this.state.description,
+          source: this.state.source,
+          userId: this.state.userId,
+          username: this.state.username
+        }
+      )
       .then(fromServer => {
         console.log(fromServer);
       });

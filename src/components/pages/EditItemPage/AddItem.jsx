@@ -35,7 +35,7 @@ class AddItem extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    axios.post("http://localhost:5000/addEntry", {
+    axios.post("https://secure-garden-36333.herokuapp.com/addEntry", {
       name: this.state.name,
       source: this.state.source,
       description: this.state.description,

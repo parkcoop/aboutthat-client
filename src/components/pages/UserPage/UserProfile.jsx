@@ -20,7 +20,11 @@ class UserProfile extends Component {
   componentDidMount() {
     console.log(this.props.userInSession);
     axios
-      .get(`http://localhost:5000/users/${this.props.match.params.username}`)
+      .get(
+        `https://secure-garden-36333.herokuapp.com/users/${
+          this.props.match.params.username
+        }`
+      )
       .then(returnedUser => {
         this.setState({
           user: returnedUser.data

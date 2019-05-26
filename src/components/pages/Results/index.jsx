@@ -21,7 +21,7 @@ class Result extends React.Component {
     }
     axios
       .get(
-        `http://localhost:5000/items/search?term=${
+        `https://secure-garden-36333.herokuapp.com/items/search?term=${
           this.props.match.params.searchTerm
         }`
       )
