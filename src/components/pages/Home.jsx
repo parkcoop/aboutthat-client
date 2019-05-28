@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route, Link, NavLink, Switch, Redirect } from "react-router-dom";
+import headertext from "../../headertext.png";
 class Home extends Component {
   constructor() {
     super();
@@ -29,6 +30,7 @@ class Home extends Component {
     return (
       <div className="search">
         <div className="searchBar">
+          <img src={headertext} width="75%" />
           <form onSubmit={this.setRedirect}>
             <input required onChange={this.handleInput} className="searchBox" />
             <button type="submit" className="btn btn-sm">

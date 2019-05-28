@@ -39,11 +39,25 @@ class UserProfile extends Component {
         className="infoSection"
         style={{ margin: "auto", padding: 50, textAlign: "center" }}
       >
+        {/* {this.state.user.avatar && ( */}
+        <Link to="/changephoto">
+          <img
+            width="200px"
+            style={{ borderRadius: "50%" }}
+            src={
+              this.state.user.avatar ||
+              "https://i2.wp.com/eikongroup.co.uk/wp-content/uploads/2017/04/Blank-avatar.png?ssl=1"
+            }
+          />
+        </Link>
+        {/* )} */}
         <h1>
           {this.state.user.username &&
             this.state.user.username.charAt(0).toUpperCase() +
               this.state.user.username.slice(1)}
         </h1>
+
+        {/* <img src={this.state.user.avatar} style= */}
         <h5>🏆 {this.state.user.points} points</h5>
         <h6>Contributions:</h6>
         <div

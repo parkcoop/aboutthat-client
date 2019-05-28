@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import AuthService from "./auth/auth-service";
-import logo from "../logo.png";
+import logo from "../aboutthatlogo.png";
 
 function Logo() {
   return (
     <a className="img" href="/">
-      <img className="img" src={logo} width="225px" />
+      <img className="img" src={logo} width="350px" />
     </a>
   );
 }
@@ -68,7 +68,7 @@ class Navbar extends React.Component {
               <button onClick={() => this.logoutUser()}>Logout</button>
             </Link>
           </div>
-          <div style={{ height: 125 }} className="nav-flex-container1">
+          <div className="nav-flex-container1">
             <Logo />
           </div>
           <div className="nav-flex-container2">

@@ -12,6 +12,7 @@ import Signup from "./auth/Signup";
 import AuthService from "./auth/auth-service";
 import Login from "./auth/Login";
 import AddItem from "./pages/EditItemPage/AddItem";
+import ChangePhoto from "./pages/UserPage/ChangePhoto";
 
 import { Route, Link, NavLink, Switch } from "react-router-dom";
 
@@ -95,6 +96,13 @@ class App extends React.Component {
               path="/addEntry"
               component={props => (
                 <AddItem userInSession={this.state.loggedInUser} />
+              )}
+            />
+            <Route
+              exact
+              path="/changephoto"
+              component={props => (
+                <ChangePhoto userInSession={this.state.loggedInUser} />
               )}
             />
           </Switch>

@@ -20,6 +20,7 @@ class AddItem extends Component {
       paleo: true,
       keto: true,
       mayContain: [],
+      photoUrl: "",
       user: this.props.userInSession.username,
       userId: this.props.userInSession._id
     };
@@ -43,11 +44,30 @@ class AddItem extends Component {
       paleo: this.state.paleo,
       keto: this.state.keto,
       mayContain: this.state.mayContain,
+      imageUrl: this.state.photoUrl,
       user: this.state.user,
       userId: this.state.userId
     });
     window.location.href = `/`;
   }
+
+  handleUpload = file => {
+    console.log("file", file);
+    axios
+      .post("https://secure-garden-36333.herokuapp.com/upload", file)
+      .then(response => {
+        this.setState({ photoUrl: response.data.secure_url });
+      })
+      .catch(err => console.error(err));
+  };
+
+  handleFile = async e => {
+    e.preventDefault();
+    const uploadData = new FormData();
+    uploadData.append("imageUrl", e.target.files[0]);
+    await this.handleUpload(uploadData);
+  };
+
   render() {
     return (
       <div
@@ -58,6 +78,17 @@ class AddItem extends Component {
 
         <hr />
         <form onSubmit={e => this.handleSubmit(e)}>
+          <label>
+            <b>Image upload</b>
+          </label>
+          <br />
+          <input
+            style={{ border: "1px solid black" }}
+            type="file"
+            onChange={this.handleFile}
+          />
+          <br />
+          <br />
           <label>
             <b>Name (try to make as same as Wikipedia's article)</b>
           </label>

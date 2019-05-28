@@ -99,7 +99,7 @@ class Datasheet extends React.Component {
         <center>
           {" "}
           <Link to={`/items/edit/${this.props.data._id}`}>
-            <button>Add a fact</button>
+            <button className="btn btn-warning">Add a fact</button>
           </Link>
         </center>
         <hr />
@@ -117,7 +117,12 @@ class Datasheet extends React.Component {
               <a
                 href={`https://en.wikipedia.org/wiki/${this.props.data.name.toLowerCase()}`}
               >
-                <button>Read Wikipedia article</button>
+                <button
+                  className="btn btn-warning"
+                  style={{ backgroundColor: "rgb(255, 252, 77)" }}
+                >
+                  Read Wikipedia article
+                </button>
               </a>
             </center>
             <br />

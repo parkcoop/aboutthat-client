@@ -1,5 +1,5 @@
 body {
-  background: rgb(224, 224, 224);
+  background: whitesmoke;
 }
 p {
   word-wrap: break-word;
@@ -16,9 +16,14 @@ button {
   background: rgb(255, 252, 77);
   border-radius: 5px;
 }
+
+input {
+  text-align: center;
+}
+
 .nav-flex-container1 {
   background: #242424;
-  height: 100px;
+  height: 150px;
   display: -ms-flexbox;
   padding: 10px;
   display: -webkit-flex;
@@ -96,13 +101,14 @@ button {
   font-size: 18px;
 }
 .search {
-  background: url("./search.png");
+  background: #212529;
   background-size: cover;
   background-position: center;
   margin: auto;
-  width: 100%;
+  width: 75%;
   height: 300px;
   display: flex;
+  border-radius: 0 0 50px 50px;
 }
 .go {
   height: 40px;
@@ -115,6 +121,21 @@ button {
   margin: 10px;
 }
 .searchBar {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBar form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.searchBar form button {
+  width: 100px;
   margin: auto;
 }
 
@@ -129,6 +150,12 @@ button {
   flex-direction: row;
   width: 70%;
   margin: auto;
+  /* border-left: 1px solid black;
+  border-right: 1px solid black; */
+}
+
+.resultContainer a {
+  color: #007bff;
 }
 .singularResult {
   padding: 10px;
@@ -274,6 +301,9 @@ button {
   }
   .infoTable {
     font-size: 15px;
+  }
+  .search {
+    width: 100%;
   }
   .searchBox {
     width: 200px;
