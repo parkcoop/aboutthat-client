@@ -13,7 +13,7 @@ class ChangePhoto extends Component {
   onSubmit = e => {
     e.preventDefault();
     console.log(this.state);
-    axios.post("http://localhost:5000/uploadAvatar", {
+    axios.post("https://secure-garden-36333.herokuapp.com/uploadAvatar", {
       imageUrl: this.state.photoUrl,
       userId: this.state.userId
     });
