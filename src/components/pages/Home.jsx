@@ -30,7 +30,7 @@ class Home extends Component {
     return (
       <div className="search">
         <div className="searchBar">
-          <img src={headertext} width="75%" />
+          <img src={headertext} width="70%" />
           <form onSubmit={this.setRedirect}>
             <input required onChange={this.handleInput} className="searchBox" />
             <button type="submit" className="btn btn-sm">

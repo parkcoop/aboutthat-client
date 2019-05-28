@@ -58,9 +58,11 @@ class Navbar extends React.Component {
       return (
         <div>
           <div className="userDialogStyles">
-            Logged in as {this.state.loggedInUser.username}
-            <br />
-            <p>🏆{this.state.loggedInUser.points}</p>
+            <div>
+              <span>Logged in as {this.state.loggedInUser.username}</span>
+              <br />
+              <span>🏆{this.state.loggedInUser.points}</span>
+            </div>
             <Link to={`/users/${this.state.loggedInUser.username}`}>
               <button>My Profile</button>
             </Link>{" "}

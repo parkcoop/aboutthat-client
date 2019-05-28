@@ -149,6 +149,11 @@ class App extends React.Component {
               path="/addEntry"
               render={() => <Login getUser={this.getTheUser} />}
             />
+            <Route
+              exact
+              path="/changephoto"
+              render={() => <Login getUser={this.getTheUser} />}
+            />
           </Switch>
         </div>
       );

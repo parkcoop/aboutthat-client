@@ -17,6 +17,7 @@ class ChangePhoto extends Component {
       imageUrl: this.state.photoUrl,
       userId: this.state.userId
     });
+
     window.location.href = `/users/${this.props.userInSession.username}`;
   };
 

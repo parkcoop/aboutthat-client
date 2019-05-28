@@ -43,7 +43,12 @@ class Result extends React.Component {
 
     return (
       <div className="resultContainer">
-        <h1>Search results for "{this.props.match.params.searchTerm}":</h1>
+        <div style={{ padding: 10 }}>
+          <h1>Search results for "{this.props.match.params.searchTerm}":</h1>
+          <p className="warningText">
+            Heroku sometimes takes a few seconds to spin up the API
+          </p>
+        </div>
         {this.state.results.map(obj => {
           return (
             <div className="singularResult">

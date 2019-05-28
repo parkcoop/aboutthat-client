@@ -47,11 +47,13 @@ class Datasheet extends React.Component {
           Contributors:{" "}
           {this.props.data.contributors.length > 1 &&
             this.props.data.contributors.map(contributors => {
-              return contributors + ", ";
+              return (
+                <Link to={`/users/${contributors}`}>{contributors}</Link> + ", "
+              );
             })}
           {this.props.data.contributors.length == 1 &&
             this.props.data.contributors.map(contributors => {
-              return contributors;
+              return <Link to={`/users/${contributors}`}>{contributors}</Link>;
             })}
         </p>
         <hr />
@@ -71,7 +73,7 @@ class Datasheet extends React.Component {
           })}
         </p>
         <p>
-          Contains:
+          Contains:{" "}
           {this.props.data.mayContain &&
             this.props.data.mayContain.map(chemicals => {
               return <b>{chemicals.toUpperCase()}</b>;
