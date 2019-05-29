@@ -114,12 +114,15 @@ class App extends React.Component {
       return (
         <div className="App">
           <NavBar userInSession={this.state.loggedInUser} />
+
           <Switch>
+            <Route exact path="/" component={Home} />
             <Route
               exact
               path="/signup"
               render={() => <Signup getUser={this.getTheUser} />}
             />
+            <Route exact path="/about" component={About} />
             <Route
               exact
               path="/login"

@@ -46,10 +46,7 @@ class UserProfile extends Component {
             <img
               width="200px"
               style={{ borderRadius: "50%" }}
-              src={
-                this.state.user.avatar ||
-                "https://i2.wp.com/eikongroup.co.uk/wp-content/uploads/2017/04/Blank-avatar.png?ssl=1"
-              }
+              src={this.state.user.avatar}
             />
           </Link>
         )}
