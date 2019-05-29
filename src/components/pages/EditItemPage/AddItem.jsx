@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-const styles = {
-  background: "white",
-  width: "50%",
-  margin: "auto",
-  padding: 100,
-  textAlign: "center"
-};
-
 class AddItem extends Component {
   constructor(props) {
     super(props);
@@ -71,7 +63,7 @@ class AddItem extends Component {
   render() {
     return (
       <div
-        className="infoSection"
+        className="addModule"
         style={{ margin: "auto", textAlign: "center" }}
       >
         <h1>Add Entry</h1>
@@ -151,7 +143,9 @@ class AddItem extends Component {
           </select>
           <br />
           <br />
-          <button type="submit">Submit Entry</button>
+          <button className="newButton" type="submit">
+            Submit Entry
+          </button>
         </form>
 
         <hr />

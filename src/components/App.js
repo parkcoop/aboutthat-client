@@ -13,6 +13,7 @@ import AuthService from "./auth/auth-service";
 import Login from "./auth/Login";
 import AddItem from "./pages/EditItemPage/AddItem";
 import ChangePhoto from "./pages/UserPage/ChangePhoto";
+import About from "./pages/AboutPage/About";
 
 import { Route, Link, NavLink, Switch } from "react-router-dom";
 
@@ -64,6 +65,7 @@ class App extends React.Component {
               render={() => <Login getUser={this.getTheUser} />}
             /> */}
             <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
             <Route
               exact
               path="/users/:username"

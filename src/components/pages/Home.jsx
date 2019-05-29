@@ -33,7 +33,15 @@ class Home extends Component {
           <img src={headertext} width="70%" />
           <form onSubmit={this.setRedirect}>
             <input required onChange={this.handleInput} className="searchBox" />
-            <button type="submit" className="btn btn-sm">
+            <button
+              type="submit"
+              className="newButton"
+              style={{
+                backgroundColor: "yellow",
+                color: "black",
+                boxShadow: "0 6px yellowgreen"
+              }}
+            >
               GO!
             </button>
           </form>

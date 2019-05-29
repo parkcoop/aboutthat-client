@@ -20,7 +20,7 @@ function NavItems() {
         </Link>
       </li>
       <li className="navList">
-        <Link style={{ textDecoration: "none" }} to="">
+        <Link style={{ textDecoration: "none" }} to="/about">
           About
         </Link>
       </li>
@@ -64,10 +64,12 @@ class Navbar extends React.Component {
               <span>🏆{this.state.loggedInUser.points}</span>
             </div>
             <Link to={`/users/${this.state.loggedInUser.username}`}>
-              <button>My Profile</button>
+              <button className="newButton2">My Profile</button>
             </Link>{" "}
             <Link to="/">
-              <button onClick={() => this.logoutUser()}>Logout</button>
+              <button className="newButton2" onClick={() => this.logoutUser()}>
+                Logout
+              </button>
             </Link>
           </div>
           <div className="nav-flex-container1">
@@ -85,12 +87,12 @@ class Navbar extends React.Component {
             {/* <ul style={{ listStyle: "none", paddingLeft: 0, margin: 0 }}> */}
             <div>
               <Link to="/login" style={{ textDecoration: "none" }}>
-                Login
+                <button className="newButton">Login</button>
               </Link>
             </div>
             <div>
               <Link to="/signup" style={{ textDecoration: "none" }}>
-                Signup
+                <button className="newButton">Signup</button>
               </Link>
             </div>
             {/* </ul> */}

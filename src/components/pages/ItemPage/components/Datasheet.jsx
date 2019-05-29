@@ -47,8 +47,13 @@ class Datasheet extends React.Component {
           Contributors:{" "}
           {this.props.data.contributors.length > 1 &&
             this.props.data.contributors.map(contributors => {
+              console.log(contributors);
+              console.log(this.props.data);
               return (
-                <Link to={`/users/${contributors}`}>{contributors}</Link> + ", "
+                <Link to={`/users/${contributors}`}>
+                  {contributors}
+                  {", "}
+                </Link>
               );
             })}
           {this.props.data.contributors.length == 1 &&
@@ -101,7 +106,7 @@ class Datasheet extends React.Component {
         <center>
           {" "}
           <Link to={`/items/edit/${this.props.data._id}`}>
-            <button className="btn btn-warning">Add a fact</button>
+            <button className="newButton">Add a fact</button>
           </Link>
         </center>
         <hr />
@@ -119,12 +124,7 @@ class Datasheet extends React.Component {
               <a
                 href={`https://en.wikipedia.org/wiki/${this.props.data.name.toLowerCase()}`}
               >
-                <button
-                  className="btn btn-warning"
-                  style={{ backgroundColor: "rgb(255, 252, 77)" }}
-                >
-                  Read Wikipedia article
-                </button>
+                <button className="newButton">Read Wikipedia article</button>
               </a>
             </center>
             <br />

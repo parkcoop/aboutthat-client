@@ -39,10 +39,7 @@ class Login extends Component {
 
   render() {
     return (
-      <div
-        className="infoSection"
-        style={{ textAlign: "center", margin: "auto" }}
-      >
+      <div className="addModule">
         <form onSubmit={this.handleFormSubmit}>
           <label>Username:</label>
           <br />
@@ -66,7 +63,9 @@ class Login extends Component {
           />
           <br />
           <br />
-          <button type="submit">Login</button>
+          <button className="newButton" type="submit">
+            Login
+          </button>
         </form>
         <p>
           Don't have account?

@@ -59,7 +59,7 @@ class EditItem extends Component {
 
   render() {
     return (
-      <div style={styles}>
+      <div className="addModule">
         <form onSubmit={e => this.onSubmit(e)}>
           <label>Fact</label>
           <br />
@@ -84,7 +84,9 @@ class EditItem extends Component {
           <br />
           <br />
 
-          <button type="submit">Submit</button>
+          <button className="newButton" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     );

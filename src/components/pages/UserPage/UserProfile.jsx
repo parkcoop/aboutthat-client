@@ -36,7 +36,7 @@ class UserProfile extends Component {
   render() {
     return (
       <div
-        className="infoSection"
+        className="addModule"
         style={{ margin: "auto", padding: 50, textAlign: "center" }}
       >
         {/* {this.state.user.avatar && ( */}
@@ -74,16 +74,7 @@ class UserProfile extends Component {
           {this.state.user.additions &&
             this.state.user.additions.map(additions => {
               return (
-                <div
-                  style={{
-                    background: "grey",
-                    padding: 10,
-                    width: "45%",
-                    margin: 10,
-
-                    color: "white"
-                  }}
-                >
+                <div className="contributionModule">
                   <Link to={`/items/${additions.itemId}`}>
                     <h6>{additions.item}</h6>
                     <h5>"{additions.contribution}"</h5>

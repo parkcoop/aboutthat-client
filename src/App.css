@@ -8,12 +8,11 @@ a {
   color: inherit;
   word-wrap: break-word;
 }
-a:hover {
+/* a:hover {
   color: #007bff;
   text-decoration: none;
-}
+} */
 button {
-  background: rgb(255, 252, 77);
   border-radius: 5px;
 }
 
@@ -23,7 +22,7 @@ input {
 
 .nav-flex-container1 {
   background: #242424;
-  height: 150px;
+  height: 125px;
   display: -ms-flexbox;
   padding: 10px;
   display: -webkit-flex;
@@ -81,14 +80,16 @@ input {
 
 /*Components */
 .navitems {
-  display: inline-flex;
+  display: flex;
   color: white;
+  align-items: center;
   margin: 0px;
-  font-size: 15px;
+  font-size: 20px;
   background: rgb(95, 95, 95);
   width: 100%;
   justify-content: center;
   padding: 5px;
+  height: 50px;
 }
 
 .navList {
@@ -131,7 +132,13 @@ input {
   display: flex;
   flex-direction: column;
   margin-top: 25px;
+
   text-align: center;
+}
+.searchBar input {
+  border-radius: 20px;
+  height: 30px;
+  border: none;
 }
 
 .searchBar form button {
@@ -181,7 +188,7 @@ input {
   border-bottom: 1px solid black;
 }
 .infoBar {
-  background: rgb(35, 43, 43);
+  background: #212529;
   height: 1000px;
   width: 25%;
   display: flex;
@@ -249,29 +256,118 @@ input {
 }
 .userDialogStyles {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 20px;
   text-align: center;
-  font-size: 0.8em;
-  background-color: rgb(255, 252, 77);
-  border-radius: 5px;
-  padding: 10px 30px;
+  color: white;
+  /* border-radius: 5px; */
+  padding: 10px 30px 30px 44px;
+  /* margin: auto; */
+  height: 100px;
   /* margin: auto; */
 }
 .userDialogStyles2 {
   position: absolute;
-  top: 10px;
+  top: 0;
+  display: flex;
   right: 10px;
   text-align: center;
-  font-size: 0.8em;
-  background-color: rgb(255, 252, 77);
-  border-radius: 5px;
-  padding: 10px 30px;
+  color: white;
+  /* border-radius: 5px; */
+  padding: 10px 30px 30px 44px;
   /* margin: auto; */
+  height: 100px;
+  /* margin: auto; */
+}
+
+.userDialogStyles > button {
+  margin: 0px;
 }
 
 .warningText {
   color: grey;
+}
+
+.newButton {
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 6px #18476e;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 5px 20px;
+  display: inline-block;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+}
+.newButton2 {
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 6px #18476e;
+  border: none;
+  font-family: inherit;
+  font-size: 0.5em;
+  cursor: pointer;
+  padding: 5px 20px;
+  display: inline-block;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+}
+.newButton:active {
+  box-shadow: 0 0 #685f5f;
+  top: 6px;
+}
+
+.newButton :hover {
+  color: white;
+}
+
+.aboutAboutThat {
+  background: #212529;
+  width: 75%;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addModule {
+  background: #212529;
+  color: white;
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: auto;
+  text-align: center;
+}
+
+.addModule input {
+  border-radius: 20px;
+  border: none;
+}
+
+.contributionModule {
+  background: white;
+  padding: 10px;
+  width: 45%;
+  margin: 10px;
+  border-radius: 50px;
+  color: #212529;
 }
 
 /*Tablet*/
@@ -347,7 +443,6 @@ input {
     width: 50%;
   }
   .infoBar {
-    background: rgb(35, 43, 43);
     height: inherit;
     width: 100%;
     display: flex;

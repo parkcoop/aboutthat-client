@@ -40,14 +40,8 @@ class ChangePhoto extends Component {
 
   render() {
     return (
-      <div
-        style={{
-          textAlign: "center",
-          background: "white",
-          width: "50%",
-          margin: "auto"
-        }}
-      >
+      <div className="addModule" style={{ height: 200, padding: 50 }}>
+        <h1>Update your avatar</h1>
         <form onSubmit={e => this.onSubmit(e)}>
           <input type="file" onChange={this.handleFile} />
           <button type="submit">Submit</button>

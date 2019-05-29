@@ -45,10 +45,7 @@ class Signup extends Component {
 
   render() {
     return (
-      <div
-        className="infoSection"
-        style={{ textAlign: "center", margin: "auto" }}
-      >
+      <div className="addModule">
         <form onSubmit={this.handleFormSubmit}>
           <label>Username:</label>
           <br />
@@ -72,7 +69,9 @@ class Signup extends Component {
           />
           <br />
           <br />
-          <button type="submit">Sign up</button>
+          <button className="newButton" type="submit">
+            Sign up
+          </button>
         </form>
 
         <p>
