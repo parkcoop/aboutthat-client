@@ -63,9 +63,9 @@ class Datasheet extends React.Component {
         </p>
         <p>
           Contains:{" "}
-          {this.props.data.mayContain &&
+          {this.props.data.mayContain.length > 0 &&
             this.props.data.mayContain.map(chemicals => {
-              return <b>{chemicals.toUpperCase()}</b>;
+              return <b>{chemicals}</b>;
             })}
         </p>
         <p>
