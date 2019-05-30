@@ -1,12 +1,11 @@
 import React from "react";
 
 function Attributes(props) {
-  console.log(props.data);
   return (
     <table className="infoTable">
       <tr>
         <td id="widthSet1">
-          <h5>Dietary</h5>
+          <h5>Dietary Info</h5>
         </td>
         <td id="widthSet2" />
       </tr>
@@ -49,11 +48,6 @@ function Attributes(props) {
       )} */}
 
       <hr />
-      <tr>
-        <td>
-          <h5>Safety</h5>
-        </td>
-      </tr>
     </table>
   );
 }

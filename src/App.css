@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+}
 body {
   background-image: url("./bg.jpg");
 }
+
 p {
   word-wrap: break-word;
 }
@@ -150,7 +155,7 @@ input {
   background: rgb(255, 255, 255);
   width: 70%;
   margin: auto;
-  padding: 10px;
+  /* padding: 10px; */
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -168,7 +173,7 @@ input {
   color: #007bff;
 }
 .singularResult {
-  padding: 10px;
+  padding: 20px;
 }
 
 .dataContainer {
@@ -285,7 +290,7 @@ input {
 }
 
 .warningText {
-  color: grey;
+  color: rgb(235, 238, 48);
 }
 
 .newButton {
@@ -322,13 +327,22 @@ input {
   outline: none;
   position: relative;
 }
-.newButton:active {
-  box-shadow: 0 0 #685f5f;
-  top: 6px;
+.newButton:hover {
+  box-shadow: 0 4px #18476e;
+  top: 2px;
+}
+.newButton2:hover {
+  box-shadow: 0 4px #18476e;
+  top: 2px;
 }
 
-.newButton :hover {
-  color: white;
+.newButton:active {
+  box-shadow: 0 0 #18476e;
+  top: 6px;
+}
+.newButton2:active {
+  box-shadow: 0 0 #18476e;
+  top: 6px;
 }
 
 .aboutAboutThat {
@@ -348,7 +362,7 @@ input {
   width: 50%;
   padding: 20px;
   margin: 10px;
-
+  border-radius: 0 0 25px 25px;
   border-right: 1px solid black;
   border-left: 1px solid black;
   border-bottom: 1px solid black;

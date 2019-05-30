@@ -22,7 +22,7 @@ class Signup extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    const username = this.state.username;
+    const username = this.state.username.toLowerCase();
     const password = this.state.password;
 
     this.service

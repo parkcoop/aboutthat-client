@@ -43,7 +43,7 @@ class Result extends React.Component {
 
     return (
       <div className="resultContainer">
-        <div style={{ padding: 10 }}>
+        <div style={{ padding: 20, background: "#212529", color: "white" }}>
           <h1>Search results for "{this.props.match.params.searchTerm}":</h1>
           <p className="warningText">
             Heroku sometimes takes a few seconds to spin up the API

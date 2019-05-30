@@ -3,12 +3,6 @@ import Datasheet from "./components/Datasheet";
 import Sidebar from "./components/Sidebar";
 import axios from "axios";
 
-// const styles = {
-//   display: "flex",
-//   width: "80%",
-//   margin: "auto"
-// };
-
 class index extends Component {
   constructor(props) {
     super();
@@ -16,17 +10,6 @@ class index extends Component {
       pageResponse: ""
     };
   }
-
-  // componentDidMount() {
-  //   axios
-  //     .get(`http://localhost:3000/items/${this.props.match.params.id}`)
-  //     .then(foundItem => {
-  //       console.log(foundItem.data);
-  //       this.setState({
-  //         pageResponse: foundItem.data
-  //       });
-  //     });
-  // }
 
   componentWillMount() {
     axios
@@ -36,7 +19,6 @@ class index extends Component {
         }`
       )
       .then(foundItem => {
-        console.log(foundItem.data);
         this.setState({
           pageResponse: foundItem.data
         });
@@ -55,7 +37,6 @@ class index extends Component {
   }
 
   render() {
-    console.log("------------------------ ", this.state.pageResponse);
     return <div>{this.showDatasheet()}</div>;
   }
 }

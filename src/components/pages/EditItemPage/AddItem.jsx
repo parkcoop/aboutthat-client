@@ -74,6 +74,7 @@ class AddItem extends Component {
             <b>Image upload</b>
           </label>
           <br />
+          <br />
           <input
             style={{ border: "1px solid black" }}
             type="file"
@@ -92,6 +93,7 @@ class AddItem extends Component {
             required
           />
           <br />
+          <br />
           <label>
             <b>Source</b>
           </label>
@@ -101,6 +103,7 @@ class AddItem extends Component {
             type="text"
             name="source"
           />
+          <br />
           <br />
           <label>
             <b>Description (one sentence)</b>
@@ -114,6 +117,7 @@ class AddItem extends Component {
             name="description"
           />
           <br />
+          <br />
           <label>
             <b>What active chemicals does this contain? (separated by comma)</b>
           </label>
@@ -124,17 +128,20 @@ class AddItem extends Component {
             name="mayContain"
           />
           <br />
+          <br />
           <label>Is it vegan/plant-based?</label> <br />
           <select onChange={this.handleChange("vegan")} name="vegan">
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
           <br />
+          <br />
           <label>Is it considered keto/carbohydrate-free?</label> <br />
           <select onChange={this.handleChange("keto")} name="keto">
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
+          <br />
           <br />
           <label>Is it considered paleo?</label> <br />
           <select onChange={this.handleChange("paleo")} name="paleo">

@@ -20,7 +20,7 @@ class Login extends Component {
   handleFormSubmit = event => {
     console.log("hi");
     event.preventDefault();
-    const username = this.state.username;
+    const username = this.state.username.toLowerCase();
     const password = this.state.password;
     this.service
       .login(username, password)

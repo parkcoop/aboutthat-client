@@ -8,27 +8,16 @@ class Datasheet extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      pageResponse: "Coffee"
+      pageResponse: ""
     };
   }
 
   componentDidMount() {
-    console.log(this.props);
-    // axios
-    //   .get(`http://localhost:3000/items/${this.props.data._id}`)
-    //   .then(foundItem => {
-    //     console.log(foundItem.data);
-    //     this.setState({
-    //       pageResponse: foundItem.data
-    //     });
-    //   });
-    console.log(this.props.data.name);
     axios
       .get(
         `https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&origin=*&titles=${this.props.data.name.toLowerCase()}`
       )
       .then(wikiResponse => {
-        console.log(wikiResponse);
         let pageNumber = Object.keys(wikiResponse.data.query.pages);
         let response = wikiResponse.data.query.pages[pageNumber].extract;
         this.setState({
@@ -39,16 +28,11 @@ class Datasheet extends React.Component {
   render() {
     return (
       <div className="infoSection">
-        <h1>
-          {this.props.data.name}
-          {/* <img id="heart" src={heart} /> */}
-        </h1>
+        <h1>{this.props.data.name}</h1>
         <p id="contributors">
           Contributors:{" "}
           {this.props.data.contributors.length > 1 &&
             this.props.data.contributors.map(contributors => {
-              console.log(contributors);
-              console.log(this.props.data);
               return (
                 <Link to={`/users/${contributors}`}>
                   {contributors}

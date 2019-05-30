@@ -372,7 +372,7 @@
   {
     "name": "Brown Sugar",
     "contributors": ["parkcoop"],
-    "description": "Granulated sugar containing molasses.",
+    "description": ["Granulated sugar containing molasses."],
     "keto": false,
     "vegan": true,
     "paleo": false,
@@ -1157,7 +1157,7 @@
   {
     "name": "Applesauce",
     "contributors": ["parkcoop"],
-    "description": "Sauce of apples made by ",
+    "description": ["Sauce of apples made by crushed apples"],
     "keto": null,
     "vegan": true,
     "paleo": true,
@@ -1259,7 +1259,7 @@
   {
     "name": "Bread crumbs",
     "contributors": ["parkcoop"],
-    "description": "Panko",
+    "description": ["Panko"],
     "keto": false,
     "vegan": false,
     "paleo": false,
