@@ -5,19 +5,17 @@ import axios from "axios";
 
 class index extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
-      pageResponse: ""
+      pageResponse: "",
+      user: this.props.userInSession
     };
   }
 
   componentWillMount() {
+    console.log(this.props.userInSession);
     axios
-      .get(
-        `https://secure-garden-36333.herokuapp.com/items/${
-          this.props.match.params.id
-        }`
-      )
+      .get(`http://localhost:5000/items/${this.props.match.params.id}`)
       .then(foundItem => {
         this.setState({
           pageResponse: foundItem.data
@@ -30,7 +28,7 @@ class index extends Component {
       return (
         <div className="resultData">
           <Sidebar data={this.state.pageResponse} />
-          <Datasheet data={this.state.pageResponse} />
+          <Datasheet user={this.state.user} data={this.state.pageResponse} />
         </div>
       );
     }

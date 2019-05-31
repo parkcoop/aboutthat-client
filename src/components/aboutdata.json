@@ -17,6 +17,7 @@
     "img": "https://i.imgur.com/vAY8Wk8.jpg",
     "keywords": ["beverage", "stimulant"],
     "mayContain": ["Caffeine"],
+    "comments": [],
     "sources": ["https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4462044/"]
   },
   {
@@ -40,6 +41,7 @@
     "img": "https://i.imgur.com/VPqELxt.png",
     "keywords": ["stimulant", "chemCompound"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://www.webmd.com/vitamins/ai/ingredientmono-979/caffeine"]
   },
   {
@@ -59,6 +61,7 @@
     "img": "https://i.imgur.com/waJXkLb.jpg",
     "keywords": ["hair product", "cleaning product"],
     "mayContain": ["sodium dodecyl sulfate"],
+    "comments": [],
     "sources": ["https://www.thoughtco.com/how-shampoo-works-607853"]
   },
   {
@@ -79,6 +82,7 @@
     "img": "https://i.imgur.com/08Q1xDB.jpg",
     "keywords": ["hair product", "cleaning product", "aerosol"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.matrix.com/blog/dry-shampoo-what-it-is-and-how-and-when-to-use-it"
     ]
@@ -99,6 +103,7 @@
     "img": "https://i.imgur.com/jI31DXL.jpg",
     "keywords": ["cleaning product"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.headandshoulders.com/en-us/healthy-hair-and-scalp/dandruff/how-anti-dandruff-shampoo-ingredients-work"
     ]
@@ -120,6 +125,7 @@
     "img": "https://i.imgur.com/AsqlAgc.jpg",
     "keywords": ["hair product", "baby", "cleaning product"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://cosmeticsinfo.org/products/baby-shampoos"]
   },
   {
@@ -141,6 +147,7 @@
     "img": "https://i.imgur.com/5ikdLeS.jpg",
     "keywords": ["dental", "cleaning product"],
     "mayContain": ["fluoride"],
+    "comments": [],
     "sources": ["https://cosmeticsinfo.org/products/toothpastes"]
   },
   {
@@ -160,6 +167,7 @@
     "img": "https://i.imgur.com/0gqoFFV.jpg",
     "keywords": ["cleaning product", "dental"],
     "mayContain": ["fluoride"],
+    "comments": [],
     "sources": [
       "https://www.ada.org/en/member-center/oral-health-topics/mouthrinse"
     ]
@@ -180,6 +188,7 @@
     "img": "https://i.imgur.com/vWt97Zs.jpg",
     "keywords": ["cleaning product", "dental"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://askthedentist.com/crest-whitestrips/",
       "https://www.ada.org/en/member-center/oral-health-topics/mouthrinse"
@@ -203,6 +212,7 @@
     "img": "https://i.imgur.com/QBq5WJu.jpg",
     "keywords": ["household"],
     "mayContain": ["soy"],
+    "comments": [],
     "sources": ["https://www.candlescience.com/learning/what-is-soy-wax"]
   },
   {
@@ -223,6 +233,7 @@
     "img": "https://i.imgur.com/Eh8in5s.jpg",
     "keywords": ["household"],
     "mayContain": ["benzene", "toluene"],
+    "comments": [],
     "sources": [
       "http://www.ehso.com/ehshome/candles2.htm",
       "http://www.pureintegrity.com/soy-vs-paraffin-candles.html"
@@ -247,6 +258,7 @@
     "img": "https://i.imgur.com/fI0f6gG.jpg",
     "keywords": ["sweetener"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.fda.gov/food/ingredientspackaginglabeling/foodadditivesingredients/ucm324856.htm"
     ]
@@ -270,6 +282,7 @@
     "img": "https://i.imgur.com/8bherBd.jpg",
     "keywords": ["sweetener"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.britannica.com/topic/molasses",
       "https://www.seriouseats.com/2017/02/what-is-blackstrap-molasses.html"
@@ -295,6 +308,7 @@
     "img": "https://i.imgur.com/WymZbP3.jpg",
     "keywords": ["sweetener", "baking"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.mayoclinic.org/drugs-supplements-honey/art-20363819"
     ]
@@ -318,6 +332,7 @@
     "img": "https://i.imgur.com/2CDsHid.jpg",
     "keywords": ["sweetener"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/nrcs141p2_024360.pdf"
     ]
@@ -341,6 +356,7 @@
     "img": "https://i.imgur.com/ljFmkHa.jpg",
     "keywords": ["sweetener", "baking"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://ordinaryvegan.net/vegansugar/",
       "https://www.sugar.org/sugar/types/"
@@ -364,6 +380,7 @@
     "img": "https://i.imgur.com/kXOssx6.jpg",
     "keywords": ["sweetener", "baking"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.sugar.org/sugar/types/",
       "https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/sugars.html"
@@ -383,6 +400,7 @@
     "img": "https://i.imgur.com/XKjEgwU.jpg",
     "keywords": ["cooking", "baking", "sweetener"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://www.sugar.org/sugar/types/"]
   },
   {
@@ -404,6 +422,7 @@
     "img": "https://i.imgur.com/99YmdMe.png",
     "keywords": ["sweetener", "cooking"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://nutritionfacts.org/topics/erythritol/"]
   },
   {
@@ -425,6 +444,7 @@
     "img": "https://i.imgur.com/5EA8L0q.png",
     "keywords": ["sweetener"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://www.healthline.com/nutrition/xylitol-101"]
   },
   {
@@ -446,6 +466,7 @@
     "img": "https://i.imgur.com/D7CzEHX.jpg",
     "keywords": ["cleaning product", "baking"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.webmd.com/a-to-z-guides/baking-soda-do-dont#1",
       "https://www.smilebrilliant.com/articles/teeth-whitening-with-baking-soda"
@@ -468,6 +489,7 @@
     "img": "https://i.imgur.com/YIf0xTH.jpg",
     "keywords": ["baking"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -490,6 +512,7 @@
     "img": "https://i.imgur.com/zt6WUxg.jpg",
     "keywords": ["thickening agent", "stabilizing agent"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.webmd.com/vitamins/ai/ingredientmono-340/xanthan-gum"
     ]
@@ -513,6 +536,7 @@
     "img": "https://i.imgur.com/y9mIAFV.jpg",
     "keywords": ["baking", "cooking", "thickening agent"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://www.thespruceeats.com/all-about-flour-995124"]
   },
   {
@@ -535,6 +559,7 @@
     "img": "https://i.imgur.com/y9mIAFV.jpg",
     "keywords": ["cleaning product", "household"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.cleaninginstitute.org/clean_living/soaps__detergents_chemistry.aspx"
     ]
@@ -555,6 +580,7 @@
     "img": "https://i.imgur.com/AWu5iuJ.jpg",
     "keywords": ["cleaning product", "household"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://cosmeticsinfo.org/products/bubble-baths"]
   },
   {
@@ -578,6 +604,7 @@
     "img": "https://i.imgur.com/hJ2duZT.jpg",
     "keywords": ["gardening", "pesticide", "cosmetics"],
     "mayContain": [],
+    "comments": [],
     "sources": ["http://npic.orst.edu/factsheets/neemgen.html"]
   },
   {
@@ -598,6 +625,7 @@
     "img": "https://i.imgur.com/71sv4jE.jpg",
     "keywords": ["cooking", "cleaning product", "health"],
     "mayContain": ["vitaminC"],
+    "comments": [],
     "sources": []
   },
   {
@@ -619,6 +647,7 @@
     "img": "https://i.imgur.com/zWl5FRP.jpg",
     "keywords": ["cleaning", "cooking", "household"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -640,6 +669,7 @@
     "img": "https://i.imgur.com/QDqvsKK.jpg",
     "keywords": ["health"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.webmd.com/diet/apple-cider-vinegar-and-your-health"
     ]
@@ -664,6 +694,7 @@
     "img": "https://i.imgur.com/NNkeK3c.jpg",
     "keywords": ["fat", "cooking"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -685,6 +716,7 @@
     "img": "https://i.imgur.com/2Vq0NUF.jpg",
     "keywords": ["fat", "cooking", "dairy"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://www.thespruceeats.com/is-butter-paleo-2582524"]
   },
   {
@@ -707,6 +739,7 @@
     "img": "https://i.imgur.com/jexhYjl.png",
     "keywords": ["health", "nutrients"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
     ]
@@ -728,6 +761,7 @@
     "img": "https://i.imgur.com/TSq3Akd.png",
     "keywords": ["chemCompound"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://pubchem.ncbi.nlm.nih.gov/compound/Quinine#section=Top"]
   },
   {
@@ -747,6 +781,7 @@
     "img": "https://i.imgur.com/AIpttZC.jpg",
     "keywords": ["beverage"],
     "mayContain": ["Quinine"],
+    "comments": [],
     "sources": ["https://www.myrecipes.com/extracrispy/what-is-tonic-water"]
   },
   {
@@ -766,6 +801,7 @@
     "img": "https://i.imgur.com/S5aTiDY.jpg",
     "keywords": ["beverage"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://vinepair.com/articles/difference-club-soda-vs-seltzer-sparkling-tonic/"
     ]
@@ -787,6 +823,7 @@
     "img": "https://i.imgur.com/wAYE5Gw.jpg",
     "keywords": ["fat"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://spoonuniversity.com/lifestyle/what-is-margarine"]
   },
   {
@@ -806,6 +843,7 @@
     "img": "https://i.imgur.com/Crl7WMn.jpg",
     "keywords": ["condiment"],
     "mayContain": [],
+    "comments": [],
     "sources": ["http://www.madehow.com/Volume-2/Ketchup.html"]
   },
   {
@@ -825,6 +863,7 @@
     "img": "https://i.imgur.com/beQd5Pc.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://recipes.howstuffworks.com/food-facts/question617.htm"]
   },
   {
@@ -845,6 +884,7 @@
     "img": "https://i.imgur.com/kxRgi56.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://www.wonderopolis.org/wonder/what-is-mustard-made-of"]
   },
   {
@@ -863,6 +903,7 @@
     "img": "https://i.imgur.com/oeyOnsz.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://www.britannica.com/topic/relish"]
   },
   {
@@ -883,6 +924,7 @@
     "img": "https://i.imgur.com/wRgNyGd.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://articles.mercola.com/teas/kombucha-tea.aspx",
       "https://www.healthline.com/nutrition/8-benefits-of-kombucha-tea#section4"
@@ -905,6 +947,7 @@
     "img": "https://i.imgur.com/Vz1UvmU.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://redstaryeast.com/science-yeast/what-is-yeast/"]
   },
   {
@@ -924,6 +967,7 @@
     "img": "",
     "keywords": [],
     "mayContain": ["Vitamin B"],
+    "comments": [],
     "sources": [
       "https://healthyeating.sfgate.com/cashew-butter-healthy-5685.html"
     ]
@@ -945,6 +989,7 @@
     "img": "https://i.imgur.com/UIGFnVb.png",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.deliciousliving.com/health/nutrition/13-tricky-ingredients-decoded/",
       "https://en.wikipedia.org/wiki/Gelatin#Production"
@@ -972,6 +1017,7 @@
       "sodium bicarbonate",
       "aluminum hydroxide"
     ],
+    "comments": [],
     "sources": []
   },
   {
@@ -988,6 +1034,7 @@
     "img": "https://i.imgur.com/jmlRhgp.png",
     "keywords": ["chemCompound", "nutrients"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1004,6 +1051,7 @@
     "img": "https://i.imgur.com/zw2G2BMl.png",
     "keywords": ["chemCompound", "nutrients"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1020,6 +1068,7 @@
     "img": "https://i.imgur.com/zw2G2BMl.png",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1036,6 +1085,7 @@
     "img": "https://i.imgur.com/1yW62fL.jpg",
     "keywords": ["baking"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1052,6 +1102,7 @@
     "img": "https://i.imgur.com/VeGpb2V.jpg",
     "keywords": ["beverage", "alcoholic"],
     "mayContain": ["ethanol"],
+    "comments": [],
     "sources": []
   },
   {
@@ -1068,6 +1119,7 @@
     "img": "https://i.imgur.com/2b2Ej9Y.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
 
@@ -1085,6 +1137,7 @@
     "img": "https://i.imgur.com/2UuJTJN.jpg",
     "keywords": ["fat", "cooking"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1101,6 +1154,7 @@
     "img": "https://i.imgur.com/akHWW3m.jpg",
     "keywords": ["fat", "cooking"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1120,6 +1174,7 @@
     "img": "https://i.imgur.com/QZWfZNS.jpg",
     "keywords": ["beverage", "stimulant"],
     "mayContain": ["caffeine"],
+    "comments": [],
     "sources": ["https://www.samovartea.com/how-tea-is-made/"]
   },
   {
@@ -1136,6 +1191,7 @@
     "img": "https://i.imgur.com/eUFO2lW.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1152,6 +1208,7 @@
     "img": "https://i.imgur.com/PufBrl5.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1168,6 +1225,7 @@
     "img": "https://i.imgur.com/z3oQIA3.jpg",
     "keywords": ["emulsifier", "cooking"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://greatist.com/health/healthy-baking-fat-swaps"]
   },
   {
@@ -1187,6 +1245,7 @@
     "img": "https://i.imgur.com/SN9Bm6V.jpg",
     "keywords": ["emulsifier"],
     "mayContain": [],
+    "comments": [],
     "sources": ["https://en.wikipedia.org/wiki/Apple_butter"]
   },
   {
@@ -1206,6 +1265,7 @@
     "img": "https://i.imgur.com/3BYpCJl.jpg",
     "keywords": ["gelling agent", "thickening agent", "emulsifier", "cooking"],
     "mayContain": [],
+    "comments": [],
     "sources": ["http://www.aquafaba.com/"]
   },
   {
@@ -1222,6 +1282,7 @@
     "img": "https://i.imgur.com/I5wQLSx.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1238,6 +1299,7 @@
     "img": "https://i.imgur.com/ZCf4U42.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1254,6 +1316,7 @@
     "img": "https://i.imgur.com/IbH5Gna.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1270,6 +1333,7 @@
     "img": "https://i.imgur.com/cySCnJQ.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1286,6 +1350,7 @@
     "img": "https://i.imgur.com/wvLS9Sy.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1302,6 +1367,7 @@
     "img": "https://i.imgur.com/sKBQInM.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1318,6 +1384,7 @@
     "img": "https://i.imgur.com/4ztlMjm.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1334,6 +1401,7 @@
     "img": "https://i.imgur.com/q9Afyuy.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1350,6 +1418,7 @@
     "img": "https://i.imgur.com/meORmqd.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1366,6 +1435,7 @@
     "img": "https://i.imgur.com/Q6GtVhN.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1382,6 +1452,7 @@
     "img": "https://i.imgur.com/46R8aUL.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1398,6 +1469,7 @@
     "img": "https://i.imgur.com/PaqxUib.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1414,6 +1486,7 @@
     "img": "https://i.imgur.com/fJrUaHY.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1430,6 +1503,7 @@
     "img": "https://i.imgur.com/ek4NMww.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1446,6 +1520,7 @@
     "img": "https://i.imgur.com/X6tFUS9.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1462,6 +1537,7 @@
     "img": "https://i.imgur.com/jx4UicJ.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1478,6 +1554,7 @@
     "img": "https://i.imgur.com/oikZwml.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1494,6 +1571,7 @@
     "img": "https://i.imgur.com/IkgkNeP.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1510,6 +1588,7 @@
     "img": "https://i.imgur.com/SURe4TT.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1526,6 +1605,7 @@
     "img": "https://i.imgur.com/FgMZRXG.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1542,6 +1622,7 @@
     "img": "",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1558,6 +1639,7 @@
     "img": "https://i.imgur.com/2RffbJM.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1574,6 +1656,7 @@
     "img": "https://i.imgur.com/HgZDDhl.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1590,6 +1673,7 @@
     "img": "https://i.imgur.com/0C2hZiC.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1606,6 +1690,7 @@
     "img": "https://i.imgur.com/NsJmqLt.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1622,6 +1707,7 @@
     "img": "https://i.imgur.com/cq80QiY.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1638,6 +1724,7 @@
     "img": "https://i.imgur.com/ccMVnls.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1654,6 +1741,7 @@
     "img": "https://i.imgur.com/fmner3x.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1670,6 +1758,7 @@
     "img": "https://i.imgur.com/mB9lSg0.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1686,6 +1775,7 @@
     "img": "https://i.imgur.com/H2xgXpT.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1702,6 +1792,7 @@
     "img": "https://i.imgur.com/mU3EdGi.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1718,6 +1809,7 @@
     "img": "https://i.imgur.com/PlXP345.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1734,6 +1826,7 @@
     "img": "https://i.imgur.com/JjZTbbM.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1750,6 +1843,7 @@
     "img": "https://i.imgur.com/6l12KNu.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1766,6 +1860,7 @@
     "img": "https://i.imgur.com/g0Tai2L.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1782,6 +1877,7 @@
     "img": "https://i.imgur.com/snnHbZk.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1798,6 +1894,7 @@
     "img": "https://i.imgur.com/7yD04kT.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1814,6 +1911,7 @@
     "img": "https://i.imgur.com/kFvFvaW.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1830,6 +1928,7 @@
     "img": "https://i.imgur.com/7Jc8qh3.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1846,6 +1945,7 @@
     "img": "https://i.imgur.com/8i7VUOa.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1862,6 +1962,7 @@
     "img": "https://i.imgur.com/jOXHoZF.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1878,6 +1979,7 @@
     "img": "https://i.imgur.com/JkuUFPv.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1894,6 +1996,7 @@
     "img": "https://i.imgur.com/m7VhUao.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1910,6 +2013,7 @@
     "img": "https://i.imgur.com/UC9MfZ5.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1926,6 +2030,7 @@
     "img": "https://i.imgur.com/LZIzQx7.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1942,6 +2047,7 @@
     "img": "https://i.imgur.com/JNCaasO.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1958,6 +2064,7 @@
     "img": "https://i.imgur.com/xzpogK7.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -1974,6 +2081,7 @@
     "img": "https://i.imgur.com/LPedf0L.jpg",
     "keywords": ["emulsifier", "thickening agent", "stabilizing agent"],
     "mayContain": [],
+    "comments": [],
     "sources": [
       "https://www.drweil.com/diet-nutrition/food-safety/is-carrageenan-safe/"
     ]
@@ -1992,6 +2100,7 @@
     "img": "https://i.imgur.com/Km29CwF.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": ["http://www.fao.org/3/x5032e/x5032E02.htm"]
   },
   {
@@ -2008,6 +2117,7 @@
     "img": "https://i.imgur.com/Xy76bW7.jpg",
     "keywords": ["alcoholic", "beverage"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2024,6 +2134,7 @@
     "img": "https://i.imgur.com/vHkIOgT.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2040,6 +2151,7 @@
     "img": "https://i.imgur.com/wzwTLPa.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2056,6 +2168,7 @@
     "img": "https://i.imgur.com/FJdxMXh.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2072,6 +2185,7 @@
     "img": "https://i.imgur.com/fEYXDOs.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2088,6 +2202,7 @@
     "img": "https://i.imgur.com/VlANBuR.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2104,6 +2219,7 @@
     "img": "https://i.imgur.com/yQTWF3n.jpg",
     "keywords": ["dairy", "fat"],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2120,6 +2236,7 @@
     "img": "https://i.imgur.com/h77Jdvl.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2136,6 +2253,7 @@
     "img": "https://i.imgur.com/nxz4CSn.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
   {
@@ -2152,6 +2270,7 @@
     "img": "https://i.imgur.com/fHPqKy1.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   },
 
@@ -2169,6 +2288,7 @@
     "img": "https://i.imgur.com/m5T9RNg.jpg",
     "keywords": [],
     "mayContain": [],
+    "comments": [],
     "sources": []
   }
 ]

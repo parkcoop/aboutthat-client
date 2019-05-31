@@ -84,7 +84,9 @@ class App extends React.Component {
             <Route
               exact
               path="/items/:id"
-              component={props => <ItemPage {...props} />}
+              component={props => (
+                <ItemPage userInSession={this.state.loggedInUser} {...props} />
+              )}
             />
             <Route
               exact

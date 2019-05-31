@@ -6,11 +6,33 @@ import { Link } from "react-router-dom";
 //make heart + number as component
 class Datasheet extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
-      pageResponse: ""
+      pageResponse: "",
+      user: this.props.user
     };
   }
+  handleRelativeTime = inputTime => {
+    const today = new Date().getTime();
+    const milliInput = new Date(inputTime).getTime();
+
+    const diff = (today - milliInput) / 1000;
+    if (diff >= 604800) {
+      const weeks = Math.floor(diff / 604800);
+      return `${weeks}w`;
+    } else if (diff >= 86400) {
+      const days = Math.floor(diff / 86400);
+      return `${days}d`;
+    } else if (diff >= 3600) {
+      const hours = Math.floor(diff / 3600);
+      return `${hours}h`;
+    } else if (diff >= 60) {
+      const minutes = Math.floor(diff / 60);
+      return `${minutes}m`;
+    }
+    const seconds = Math.floor(diff);
+    return `${seconds}s`;
+  };
 
   componentDidMount() {
     axios
@@ -25,6 +47,23 @@ class Datasheet extends React.Component {
         });
       });
   }
+  handleComment = e => {
+    this.setState({
+      comment: e.target.value
+    });
+  };
+  addComment = e => {
+    e.preventDefault();
+    // console.log(this.state.user);
+    // console.log(this.props.data._id);
+    axios.post(`http://localhost:5000/addcomment/${this.props.data._id}`, {
+      user: this.state.user.username,
+      userId: this.state.user._id,
+      comment: this.state.comment
+      // itemId: this.props.data._id
+    });
+    window.location.href = `/items/${this.props.data._id}`;
+  };
   render() {
     return (
       <div className="infoSection">
@@ -115,6 +154,34 @@ class Datasheet extends React.Component {
             <br />
           </div>
         )}
+        <hr />
+        {this.state.user && (
+          <form id="commentform" onSubmit={this.addComment}>
+            <textarea onChange={this.handleComment} className="commentBox" />
+            <br />
+            <button type="submit" className="newButton">
+              Add comment
+            </button>
+          </form>
+        )}
+        <h2>Comments</h2>
+        {this.props.data.comments &&
+          this.props.data.comments
+            .sort(function(a, b) {
+              return b.timestamp - a.timestamp;
+            })
+            .map(comments => {
+              return (
+                <div className="comment">
+                  <h5>{comments.username}</h5>
+                  <p>{this.handleRelativeTime(comments.timestamp)}</p>
+                  <hr />
+                  <h3>{comments.comment}</h3>
+                </div>
+              );
+            })}
+
+        <div />
       </div>
     );
   }
