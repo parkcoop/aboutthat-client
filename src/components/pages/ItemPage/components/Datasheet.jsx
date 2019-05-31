@@ -56,12 +56,17 @@ class Datasheet extends React.Component {
     e.preventDefault();
     // console.log(this.state.user);
     // console.log(this.props.data._id);
-    axios.post(`http://localhost:5000/addcomment/${this.props.data._id}`, {
-      user: this.state.user.username,
-      userId: this.state.user._id,
-      comment: this.state.comment
-      // itemId: this.props.data._id
-    });
+    axios.post(
+      `https://secure-garden-36333.herokuapp.com/addcomment/${
+        this.props.data._id
+      }`,
+      {
+        user: this.state.user.username,
+        userId: this.state.user._id,
+        comment: this.state.comment
+        // itemId: this.props.data._id
+      }
+    );
     window.location.href = `/items/${this.props.data._id}`;
   };
   render() {

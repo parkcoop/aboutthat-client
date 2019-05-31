@@ -15,7 +15,11 @@ class index extends Component {
   componentWillMount() {
     console.log(this.props.userInSession);
     axios
-      .get(`http://localhost:5000/items/${this.props.match.params.id}`)
+      .get(
+        `https://secure-garden-36333.herokuapp.com/items/${
+          this.props.match.params.id
+        }`
+      )
       .then(foundItem => {
         this.setState({
           pageResponse: foundItem.data
