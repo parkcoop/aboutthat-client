@@ -41,7 +41,7 @@ class UserProfile extends Component {
       >
         {/* {this.state.user.avatar && ( */}
 
-        {this.state.user.avatar && (
+        {this.state.user && this.state.user.avatar && (
           <Link to="/changephoto">
             <img
               width="200px"
@@ -52,13 +52,14 @@ class UserProfile extends Component {
         )}
         {/* )} */}
         <h1>
-          {this.state.user.username &&
+          {this.state.user &&
+            this.state.user.username &&
             this.state.user.username.charAt(0).toUpperCase() +
               this.state.user.username.slice(1)}
         </h1>
 
         {/* <img src={this.state.user.avatar} style= */}
-        <h5>🏆 {this.state.user.points} points</h5>
+        <h5>🏆 {this.state.user && this.state.user.points} points</h5>
         <h6>Contributions:</h6>
         <div
           style={{
@@ -68,7 +69,8 @@ class UserProfile extends Component {
             flexWrap: "wrap"
           }}
         >
-          {this.state.user.additions &&
+          {this.state.user &&
+            this.state.user.additions &&
             this.state.user.additions.map(additions => {
               return (
                 <div className="contributionModule">

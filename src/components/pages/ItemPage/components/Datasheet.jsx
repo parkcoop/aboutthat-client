@@ -155,11 +155,11 @@ class Datasheet extends React.Component {
                 <button className="newButton">Read Wikipedia article</button>
               </a>
             </center>
-            <br />
-            <br />
           </div>
         )}
+        <br />
         <hr />
+        <br />
         {this.state.user && (
           <form id="commentform" onSubmit={this.addComment}>
             <textarea onChange={this.handleComment} className="commentBox" />
