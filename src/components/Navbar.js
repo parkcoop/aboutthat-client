@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import AuthService from "./auth/auth-service";
 import logo from "../aboutthatlogo.png";
@@ -48,12 +48,9 @@ class Navbar extends React.Component {
     this.service.logout().then(() => {
       this.setState({ loggedInUser: null });
       window.location.href = "/";
-
-      // this.props.getUser(null);
     });
   };
   render() {
-    // return (
     if (this.state.loggedInUser) {
       return (
         <div>
@@ -84,7 +81,6 @@ class Navbar extends React.Component {
       return (
         <div>
           <div className="userDialogStyles2">
-            {/* <ul style={{ listStyle: "none", paddingLeft: 0, margin: 0 }}> */}
             <div>
               <Link to="/login" style={{ textDecoration: "none" }}>
                 <button className="newButton">Login</button>
@@ -95,7 +91,6 @@ class Navbar extends React.Component {
                 <button className="newButton">Signup</button>
               </Link>
             </div>
-            {/* </ul> */}
           </div>
           <div className="nav-flex-container1">
             <Logo />

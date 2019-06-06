@@ -15,7 +15,7 @@ import AddItem from "./pages/EditItemPage/AddItem";
 import ChangePhoto from "./pages/UserPage/ChangePhoto";
 import About from "./pages/AboutPage/About";
 
-import { Route, Link, NavLink, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
   constructor(props) {
@@ -54,16 +54,6 @@ class App extends React.Component {
         <div className="App">
           <NavBar userInSession={this.state.loggedInUser} />
           <Switch>
-            {/* <Route
-              exact
-              path="/signup"
-              render={() => <Signup getUser={this.getTheUser} />}
-            />
-            <Route
-              exact
-              path="/login"
-              render={() => <Login getUser={this.getTheUser} />}
-            /> */}
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route

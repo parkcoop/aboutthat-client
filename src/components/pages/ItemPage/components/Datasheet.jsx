@@ -2,8 +2,6 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-// import heart from "./img/heart.png";
-//make heart + number as component
 class Datasheet extends React.Component {
   constructor(props) {
     super(props);
@@ -54,8 +52,6 @@ class Datasheet extends React.Component {
   };
   addComment = e => {
     e.preventDefault();
-    // console.log(this.state.user);
-    // console.log(this.props.data._id);
     axios.post(
       `https://secure-garden-36333.herokuapp.com/addcomment/${
         this.props.data._id
@@ -64,7 +60,6 @@ class Datasheet extends React.Component {
         user: this.state.user.username,
         userId: this.state.user._id,
         comment: this.state.comment
-        // itemId: this.props.data._id
       }
     );
     window.location.href = `/items/${this.props.data._id}`;
@@ -76,17 +71,21 @@ class Datasheet extends React.Component {
         <p id="contributors">
           Contributors:{" "}
           {this.props.data.contributors.length > 1 &&
-            this.props.data.contributors.map(contributors => {
+            this.props.data.contributors.map((contributors, i) => {
               return (
-                <Link to={`/users/${contributors}`}>
+                <Link key={i} to={`/users/${contributors}`}>
                   {contributors}
                   {", "}
                 </Link>
               );
             })}
-          {this.props.data.contributors.length == 1 &&
-            this.props.data.contributors.map(contributors => {
-              return <Link to={`/users/${contributors}`}>{contributors}</Link>;
+          {this.props.data.contributors.length === 1 &&
+            this.props.data.contributors.map((contributors, i) => {
+              return (
+                <Link key={i} to={`/users/${contributors}`}>
+                  {contributors}
+                </Link>
+              );
             })}
         </p>
         <hr />
@@ -108,27 +107,26 @@ class Datasheet extends React.Component {
         <p>
           Contains:{" "}
           {this.props.data.mayContain.length > 0 &&
-            this.props.data.mayContain.map(chemicals => {
-              return <b>{chemicals}</b>;
+            this.props.data.mayContain.map((chemicals, i) => {
+              return <b key={i}>{chemicals}</b>;
             })}
         </p>
         <p>
           Read more:{" "}
-          {this.props.data.sources.map(sources => {
+          {this.props.data.sources.map((sources, i) => {
             if (sources.startsWith("http")) {
               return (
-                <li>
+                <li key={i}>
                   <a href={sources}>{sources}</a>
                 </li>
               );
             } else {
               return (
-                <li>
+                <li key={i}>
                   <a href={"http://" + sources}>{sources}</a>
                 </li>
               );
             }
-            // console.log(sources.startsWith("http"));
           })}
         </p>
         <center>
@@ -175,9 +173,9 @@ class Datasheet extends React.Component {
             .sort(function(a, b) {
               return b.timestamp - a.timestamp;
             })
-            .map(comments => {
+            .map((comments, i) => {
               return (
-                <div className="comment">
+                <div key={i} className="comment">
                   <h5>{comments.username}</h5>
                   <p>{this.handleRelativeTime(comments.timestamp)}</p>
                   <hr />

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link, NavLink, Switch, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import headertext from "../../headertext.png";
 class Home extends Component {
   constructor() {
@@ -30,7 +30,10 @@ class Home extends Component {
     return (
       <div className="search">
         <div className="searchBar">
-          <img src={headertext} />
+          <img
+            alt="Because in a world of deceptive marketing, it is almost impossible to find reliable information"
+            src={headertext}
+          />
           <form onSubmit={this.setRedirect}>
             <input required onChange={this.handleInput} className="searchBox" />
             <button

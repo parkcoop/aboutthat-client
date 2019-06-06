@@ -8,9 +8,20 @@ class About extends Component {
   render() {
     return (
       <div className="aboutAboutThat">
-        <img src={help} style={{ marginBottom: 100 }} />
-        <img src={howto} style={{ marginBottom: 100 }} />
-        <img src={submithelp} />
+        <img
+          alt="Want to know how to help?"
+          src={help}
+          style={{ marginBottom: 100 }}
+        />
+        <img
+          alt="Push add button to add facts to articles"
+          src={howto}
+          style={{ marginBottom: 100 }}
+        />
+        <img
+          alt="Submit an article if you can't find what you're looking for!"
+          src={submithelp}
+        />
       </div>
     );
   }

@@ -13,7 +13,7 @@ function Attributes(props) {
       {props.data.vegan != null && (
         <tr>
           <td>Vegan: </td>
-          {props.data.vegan == true ? (
+          {props.data.vegan === true ? (
             <td className="yes">Yes</td>
           ) : (
             <td className="no">No</td>
@@ -23,7 +23,7 @@ function Attributes(props) {
       {props.data.paleo != null && (
         <tr>
           <td>Paleo: </td>
-          {props.data.paleo == true ? (
+          {props.data.paleo === true ? (
             <td className="yes">Yes</td>
           ) : (
             <td className="no">No</td>
@@ -33,21 +33,13 @@ function Attributes(props) {
       {props.data.keto != null && (
         <tr>
           <td>Keto: </td>
-          {props.data.keto == true ? (
+          {props.data.keto === true ? (
             <td className="yes">Yes</td>
           ) : (
             <td className="no">No</td>
           )}
         </tr>
       )}
-      {/* {props.data.keto != null && (
-        <tr>
-          <td>Keto: </td>
-          <td className="yes">Yes</td>
-        </tr>
-      )} */}
-
-      <hr />
     </table>
   );
 }

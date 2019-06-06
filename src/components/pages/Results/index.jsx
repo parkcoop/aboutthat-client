@@ -1,7 +1,5 @@
 import React from "react";
-import data from "../../aboutdata.json";
-// import data from "../../aboutdata.json";
-import { Route, Link, NavLink, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 class Result extends React.Component {
@@ -14,8 +12,8 @@ class Result extends React.Component {
 
   componentDidMount() {
     if (
-      this.props.match.params.searchTerm == " " ||
-      this.props.match.params.searchTerm == "  "
+      this.props.match.params.searchTerm === " " ||
+      this.props.match.params.searchTerm === "  "
     ) {
       window.location.href = `/`;
     }
@@ -26,7 +24,6 @@ class Result extends React.Component {
         }`
       )
       .then(data => {
-        // console.log(data);
         this.setState({
           results: data.data
         });
@@ -34,13 +31,6 @@ class Result extends React.Component {
   }
 
   render() {
-    // console.log(this.props.match.params);
-    // let searchTerm = this.props.match.params.searchTerm;
-
-    // let results = data.items.filter(obj =>
-    //   obj.name.toLowerCase().includes(searchTerm)
-    // );
-
     return (
       <div className="resultContainer">
         <div style={{ padding: 20, background: "#212529", color: "white" }}>
