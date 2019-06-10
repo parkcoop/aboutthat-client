@@ -3,42 +3,42 @@ import React from "react";
 function Attributes(props) {
   return (
     <table className="infoTable">
-      <tr>
-        <td id="widthSet1">
+      <tbody>
+        <tr id="widthSet1">
           <h5>Dietary Info</h5>
-        </td>
-        <td id="widthSet2" />
-      </tr>
+        </tr>
+        <tr id="widthSet2" />
+      </tbody>
 
       {props.data.vegan != null && (
-        <tr>
-          <td>Vegan: </td>
+        <tbody>
+          <tr>Vegan: </tr>
           {props.data.vegan === true ? (
-            <td className="yes">Yes</td>
+            <tr className="yes">Yes</tr>
           ) : (
-            <td className="no">No</td>
+            <tr className="no">No</tr>
           )}
-        </tr>
+        </tbody>
       )}
       {props.data.paleo != null && (
-        <tr>
-          <td>Paleo: </td>
+        <tbody>
+          <tr>Paleo: </tr>
           {props.data.paleo === true ? (
-            <td className="yes">Yes</td>
+            <tr className="yes">Yes</tr>
           ) : (
-            <td className="no">No</td>
+            <tr className="no">No</tr>
           )}
-        </tr>
+        </tbody>
       )}
       {props.data.keto != null && (
-        <tr>
-          <td>Keto: </td>
+        <tbody>
+          <tr>Keto: </tr>
           {props.data.keto === true ? (
-            <td className="yes">Yes</td>
+            <tr className="yes">Yes</tr>
           ) : (
-            <td className="no">No</td>
+            <tr className="no">No</tr>
           )}
-        </tr>
+        </tbody>
       )}
     </table>
   );

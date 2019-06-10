@@ -39,9 +39,9 @@ class Result extends React.Component {
             Heroku sometimes takes a few seconds to spin up the API
           </p>
         </div>
-        {this.state.results.map(obj => {
+        {this.state.results.map((obj, i) => {
           return (
-            <div className="singularResult">
+            <div key={i} className="singularResult">
               <h3>
                 <Link to={`/items/${obj._id}`}>{obj.name}</Link>
               </h3>

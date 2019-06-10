@@ -34,6 +34,7 @@ class UserProfile extends Component {
         {this.state.user && this.state.user.avatar && (
           <Link to="/changephoto">
             <img
+              alt="User profile"
               width="200px"
               style={{ borderRadius: "50%" }}
               src={this.state.user.avatar}
@@ -46,7 +47,12 @@ class UserProfile extends Component {
             this.state.user.username.charAt(0).toUpperCase() +
               this.state.user.username.slice(1)}
         </h1>
-        <h5>🏆 {this.state.user && this.state.user.points} points</h5>
+        <h5>
+          <span role="img" aria-label="trophy">
+            🏆
+          </span>{" "}
+          {this.state.user && this.state.user.points} points
+        </h5>
         <h6>Contributions:</h6>
         <div
           style={{

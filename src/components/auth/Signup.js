@@ -2,23 +2,12 @@ import React, { Component } from "react";
 import AuthService from "./auth-service";
 import { Link } from "react-router-dom";
 
-const loginStyles = {
-  background: "white",
-  padding: 100,
-  margin: "auto",
-  width: "50%",
-  textAlign: "center",
-  borderRadius: "0px 0px 10px 10px"
-};
-
 class Signup extends Component {
   constructor(props) {
     super(props);
     this.state = { username: "", password: "" };
     this.service = new AuthService();
   }
-
-  // handleChange() and handleSubmit() will be added here
 
   handleFormSubmit = event => {
     event.preventDefault();

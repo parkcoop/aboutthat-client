@@ -2,14 +2,6 @@ import React, { Component } from "react";
 import AuthService from "./auth-service";
 import { Link } from "react-router-dom";
 
-const loginStyles = {
-  background: "white",
-  padding: 100,
-  margin: "auto",
-  width: "50%",
-  textAlign: "center"
-};
-
 class Login extends Component {
   constructor(props) {
     super(props);

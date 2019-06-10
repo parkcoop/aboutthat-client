@@ -6,7 +6,7 @@ import logo from "../aboutthatlogo.png";
 function Logo() {
   return (
     <a className="img" href="/">
-      <img className="img" src={logo} width="350px" />
+      <img alt="about-that logo" className="img" src={logo} width="350px" />
     </a>
   );
 }
@@ -58,7 +58,12 @@ class Navbar extends React.Component {
             <div>
               <span>{this.state.loggedInUser.username}</span>
               <br />
-              <span>🏆{this.state.loggedInUser.points}</span>
+              <span>
+                <span role="img" aria-label="trophy">
+                  🏆
+                </span>
+                {this.state.loggedInUser.points}
+              </span>
             </div>
             <Link to={`/users/${this.state.loggedInUser.username}`}>
               <button className="newButton2">Profile</button>

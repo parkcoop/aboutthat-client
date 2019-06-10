@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-const styles = {
-  background: "white",
-  width: "50%",
-  margin: "auto",
-  padding: 100,
-  textAlign: "center"
-};
-
 class EditItem extends Component {
   constructor(props) {
     super(props);
